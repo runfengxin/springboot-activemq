@@ -3,12 +3,13 @@ package com.example.demo.producer;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.springframework.jms.core.JmsMessagingTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.jms.Destination;
 
-@Service
+@Component
 public class Producer {
 
     @Resource
